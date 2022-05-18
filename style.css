@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+    cursor: url("pixil-frame-0\ \(2\).png"),auto;
+    overflow: hidden;
+    color:rgb(193, 227, 240);
+}
+
+ul{
+    list-style: none;
+}
+.left,.right{
+    height:100%;
+    width:100%;
+    position: absolute;
+    z-index:-1;
+}
+.left{
+    background-color: #5d4698cd;
+    height:0%;
+}
+.right{
+    background-color: rgb(32, 21, 56);
+    heighT:100%;
+    bottom: 0;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding:0 100px;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    heighT:80px;
+    gap:20px;
+    color:rgb(193, 227, 240);
+    
+}
+.text {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+  }
+  
+  .text h1 {
+    font-size: 90px;
+    
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+  .img-wrapper{
+    position: absolute;
+    left:280px;
+}
+
+.img-wrapper .karina{
+    background-image: url("./pexels-vijay-sadasivuni-3833370.jpg");
+    background-size:cover;
+    background-position: center;
+    widtH:0px;
+    height:750px;
+    cursor: pointer;
+}
+  .text p {
+    font-size: 20px;
+  }
+  
+.info{
+    position: absolute;
+    left:-50px;
+    bottom: 250px;
+    transform: rotate(270deg);
+}
+
+.info p{
+    font-size:5rem;
+    letter-spacing: 1px;
+}
+.info h2{
+    font-size:3rem;
+    letter-spacing: 1px;
+}

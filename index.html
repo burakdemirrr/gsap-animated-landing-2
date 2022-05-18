@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="left"></div>
+        <div class="right"></div>
+
+        <nav>
+            <h1>Burrak.</h1>
+            <ul>
+                <li>unsplash.</li>
+                <li>creative.</li>
+                <li>workflow.</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="img-wrapper">
+                <div class="karina"></div>
+            </div>
+            <div class="info">
+                <p>Web Designer </p>
+                <h2>Developer</h2>
+            </div>
+
+            <div class="text">
+                <h1>Burrak Demir</h1>
+                <p>Web Designer</p>
+            </div>
+        </div>
+    </div>   
+    </div>
+
+
+
+    <script>
+        TweenMax.to(".left",2,{
+            delay:.6,
+            height:"100%",
+            ease:Power2.easeInOut
+        })
+        TweenMax.to(".right",2,{
+            delay:.8,
+            height:"0%",
+            ease:Circ.easeInOut
+        })
+
+        TweenMax.from('nav',4,{
+            delay:1,
+            opacity:0,
+            ease:Power2.easeInOut
+        })
+
+        
+        TweenMax.from('.text h1',4,{
+            delay:.6,
+            x:1000,
+            ease:Circ.easeInOut
+        })
+        TweenMax.from(".text p",4,{
+            delay:.7,
+            x:1000,
+            ease:Circ.easeInOut
+        })
+
+
+        TweenMax.from(".info h2 ",4,{
+            delay:.8,
+            opacity:0,
+            ease:Expo.easeInOut
+        })  
+        TweenMax.from(".info p ",4,{
+            delay:.8,
+            opacity:0,
+            ease:Expo.easeInOut
+        })
+
+        TweenMax.to('.karina', 4, {
+          delay: 2,
+          width: '500px',
+          ease:Power4.easeInOut
+        })
+
+        
+    </script>
+
+
+
+</body>
+</html>
